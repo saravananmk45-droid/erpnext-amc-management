@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-06-04 13:23:28.900811",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ticket_information_section",
+  "naming_series",
+  "customer",
+  "amc_contract_link",
+  "issue_category",
+  "priority",
+  "issue_details_section",
+  "description",
+  "attachment",
+  "assignment_detaiils_section",
+  "assigned_technician",
+  "status",
+  "resolution_notes",
+  "resolution_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "ticket_information_section",
+   "fieldtype": "Section Break",
+   "label": "Ticket Information"
+  },
+  {
+   "default": "TKT-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming series",
+   "options": "TKT-.YYYY.-.#####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amc_contract_link",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "AMC Contract Link",
+   "options": "AMC Contract",
+   "reqd": 1
+  },
+  {
+   "fieldname": "issue_category",
+   "fieldtype": "Data",
+   "label": "Issue category"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "Low\nMedium\nHigh\nCritical"
+  },
+  {
+   "fieldname": "issue_details_section",
+   "fieldtype": "Section Break",
+   "label": "Issue Details"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "assignment_detaiils_section",
+   "fieldtype": "Section Break",
+   "label": "Assignment Detaiils"
+  },
+  {
+   "fieldname": "assigned_technician",
+   "fieldtype": "Link",
+   "label": "Assigned Technician",
+   "options": "User"
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nIn Progress\nOn Hold\nResolved\nClosed"
+  },
+  {
+   "fieldname": "resolution_notes",
+   "fieldtype": "Small Text",
+   "label": "Resolution Notes"
+  },
+  {
+   "fieldname": "resolution_date",
+   "fieldtype": "Date",
+   "label": "Resolution Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-05 12:21:05.671380",
+ "modified_by": "Administrator",
+ "module": "AMC Management",
+ "name": "Service Ticket",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
