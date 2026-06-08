@@ -18,6 +18,7 @@
   "assigned_account_manager",
   "status",
   "remaining_days",
+  "used_free_visits",
   "remaining_visits",
   "system_information_section",
   "naming_series"
@@ -100,8 +101,7 @@
   {
    "fieldname": "remaining_visits",
    "fieldtype": "Int",
-   "label": "Remaining Visits",
-   "read_only": 1
+   "label": "Remaining Visits"
   },
   {
    "fieldname": "system_information_section",
@@ -114,12 +114,19 @@
    "label": "Naming Series",
    "options": "AMC-.YYYY.-.#####",
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "used_free_visits",
+   "fieldtype": "Int",
+   "label": "Used Free Visits",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-05 12:22:25.290864",
+ "modified": "2026-06-08 15:09:30.298483",
  "modified_by": "Administrator",
  "module": "AMC Management",
  "name": "AMC Contract",
