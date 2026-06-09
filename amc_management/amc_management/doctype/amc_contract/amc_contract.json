@@ -8,6 +8,7 @@
  "field_order": [
   "contract_information_section",
   "customer",
+  "customer_email",
   "start_date",
   "end_date",
   "amc_details_section",
@@ -121,12 +122,18 @@
    "fieldtype": "Int",
    "label": "Used Free Visits",
    "read_only": 1
+  },
+  {
+   "fieldname": "customer_email",
+   "fieldtype": "Data",
+   "label": "Customer Email",
+   "options": "Email"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-08 15:09:30.298483",
+ "modified": "2026-06-09 14:34:56.684473",
  "modified_by": "Administrator",
  "module": "AMC Management",
  "name": "AMC Contract",
