@@ -17,6 +17,9 @@
   "attachment",
   "assignment_detaiils_section",
   "assigned_technician",
+  "resolution_eta",
+  "sla_due_date",
+  "sla_breached",
   "status",
   "resolution_notes",
   "resolution_date"
@@ -104,12 +107,29 @@
    "fieldname": "resolution_date",
    "fieldtype": "Date",
    "label": "Resolution Date"
+  },
+  {
+   "fieldname": "resolution_eta",
+   "fieldtype": "Datetime",
+   "label": "Resolution ETA"
+  },
+  {
+   "fieldname": "sla_due_date",
+   "fieldtype": "Datetime",
+   "label": "SLA Due Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "sla_breached",
+   "fieldtype": "Check",
+   "label": "SLA Breached",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-05 12:21:05.671380",
+ "modified": "2026-06-10 21:55:00.394687",
  "modified_by": "Administrator",
  "module": "AMC Management",
  "name": "Service Ticket",
