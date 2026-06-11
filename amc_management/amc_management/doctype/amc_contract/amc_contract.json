@@ -87,11 +87,11 @@
    "options": "User"
   },
   {
-   "default": "Active",
+   "default": "Draft",
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Active\nExpired\nPending Renewal"
+   "options": "Draft\nApproved\nExpired\nPending Renewal"
   },
   {
    "fieldname": "remaining_days",
@@ -133,7 +133,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-09 14:34:56.684473",
+ "modified": "2026-06-11 15:14:34.892500",
  "modified_by": "Administrator",
  "module": "AMC Management",
  "name": "AMC Contract",

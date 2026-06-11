@@ -31,11 +31,11 @@
    "label": "Ticket Information"
   },
   {
-   "default": "TKT-.YYYY.-.#####",
+   "default": "SR-.YYYY.-.#####",
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Naming series",
-   "options": "TKT-.YYYY.-.#####",
+   "options": "SR-.YYYY.-.#####",
    "reqd": 1
   },
   {
@@ -96,7 +96,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Open\nIn Progress\nOn Hold\nResolved\nClosed"
+   "options": "Open\nAssigned\nIn Progress\nOn Hold\nResolved\nClosed"
   },
   {
    "fieldname": "resolution_notes",
@@ -129,7 +129,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-10 21:55:00.394687",
+ "modified": "2026-06-11 13:31:50.121949",
  "modified_by": "Administrator",
  "module": "AMC Management",
  "name": "Service Ticket",

@@ -14,6 +14,12 @@
   "remarks",
   "status",
   "visit_outcome",
+  "visit_completed_on",
+  "customer_feedback",
+  "customer_signature",
+  "visit_attachment",
+  "next_visit_date",
+  "work_done",
   "naming_series",
   "contract_details_section",
   "customer",
@@ -73,7 +79,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Scheduled\nIn Progress\nCompleted\nCancelled",
+   "options": "Scheduled\nAssigned\nIn Progress\nCompleted\nCancelled",
    "reqd": 1
   },
   {
@@ -99,12 +105,42 @@
    "fieldtype": "Currency",
    "label": "Contract Value",
    "read_only": 1
+  },
+  {
+   "fieldname": "visit_completed_on",
+   "fieldtype": "Datetime",
+   "label": "Visit Completed On"
+  },
+  {
+   "fieldname": "customer_feedback",
+   "fieldtype": "Small Text",
+   "label": "Customer Feedback"
+  },
+  {
+   "fieldname": "customer_signature",
+   "fieldtype": "Attach Image",
+   "label": "Customer Signature"
+  },
+  {
+   "fieldname": "visit_attachment",
+   "fieldtype": "Attach",
+   "label": "Visit Attachment"
+  },
+  {
+   "fieldname": "next_visit_date",
+   "fieldtype": "Date",
+   "label": "Next Visit Date"
+  },
+  {
+   "fieldname": "work_done",
+   "fieldtype": "Text Editor",
+   "label": "Work Done"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-08 12:45:25.276128",
+ "modified": "2026-06-11 14:16:05.594952",
  "modified_by": "Administrator",
  "module": "AMC Management",
  "name": "AMC Visit",
