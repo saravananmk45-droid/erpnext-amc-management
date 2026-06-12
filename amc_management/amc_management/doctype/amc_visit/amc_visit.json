@@ -8,6 +8,7 @@
  "field_order": [
   "visit_information_section",
   "amc_contract",
+  "customer_email",
   "visit_date",
   "engineer",
   "visit_type",
@@ -135,12 +136,19 @@
    "fieldname": "work_done",
    "fieldtype": "Text Editor",
    "label": "Work Done"
+  },
+  {
+   "fetch_from": "amc_contract.customer_email",
+   "fieldname": "customer_email",
+   "fieldtype": "Data",
+   "label": "Customer Email",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-11 14:16:05.594952",
+ "modified": "2026-06-11 19:39:53.212643",
  "modified_by": "Administrator",
  "module": "AMC Management",
  "name": "AMC Visit",
